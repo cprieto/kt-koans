@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:+'
+    }
+}
+
+apply plugin: "kotlin"
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useTestNG()
+}
+
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:+'
+    testCompile 'org.testng:testng:+'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
