@@ -1,6 +1,7 @@
 package i_introduction._1_Functions
 
 import util.TODO
+import java.util.*
 
 fun foo(s: String): String {
     fun localFoo(): Int {
@@ -19,15 +20,20 @@ public fun pbar(): Int = 45
 internal fun ibar() = 57
 
 fun todoTask1(collection: Collection<Int>): Nothing = TODO(
-    """
+        """
         Task 1.
         Rewrite JavaCode1.task1 in Kotlin.
         In IntelliJ, you can just copy-paste it and agree to automatically convert it to Kotlin - but only
         for this task :).
     """,
-    references = { JavaCode1().task1(collection) })
-
+        references = { JavaCode1().task1(collection) })
 
 fun task1(collection: Collection<Int>): String {
-    todoTask1(collection)
+    val sj = StringJoiner(", ", "{", "}")
+    val it = collection.iterator()
+    while (it.hasNext()) {
+        val el = it.next()
+        sj.add(el.toString())
+    }
+    return sj.toString()
 }
