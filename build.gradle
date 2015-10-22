@@ -25,5 +25,9 @@ task wrapper(type: Wrapper) {
 }
 
 sourceSets {
-    main.java.srcDirs += 'src/main/kotlin'
+    main.java.srcDirs += 'src'
+    main.kotlin.srcDirs += 'src'
+
+    test.java.srcDirs += 'test'
+    test.kotlin.srcDirs += 'test'
 }
