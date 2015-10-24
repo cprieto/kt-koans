@@ -1,6 +1,6 @@
 # Kotlin Koans
 
-[![Travis CI build](https://travis-ci.org/cprieto/kt-koans.svg?branch=master)(https://travis-ci.org/cprieto/kt-koans)]
+[![Build status](https://travis-ci.org/cprieto/kt-koans.svg?branch=master)](https://travis-ci.org/cprieto/kt-koans)
 
 My take in the kotlin koans repository, step by step.
 
