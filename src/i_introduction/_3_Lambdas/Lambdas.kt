@@ -3,6 +3,7 @@ package i_introduction._3_Lambdas
 import util.TODO
 import com.google.common.collect.Iterables
 
+@Suppress("UNUSED_VARIABLE")
 fun examples() {
 
     val sum = { x: Int, y: Int -> x + y }

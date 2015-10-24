@@ -3,6 +3,7 @@ package i_introduction._5_Nullable_Types
 import java.io.File
 import util.TODO
 
+@Suppress("UNUSED_VARIABLE", "UNUSED_PARAMETER")
 fun test() {
     val s: String = "this variable cannot store null references"
     val q: String? = null
@@ -13,6 +14,7 @@ fun test() {
     //useNotNullableType(null)
 }
 
+@Suppress("UNUSED_VARIABLE")
 fun struggleAgainstNPE() {
     val files = File("test").listFiles()
 

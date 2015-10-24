@@ -7,6 +7,7 @@ import java.awt.event.MouseListener
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 
+@Suppress("UNUSED_VARIABLE")
 fun objectLiteral() {
 
     abstract class Foo {

@@ -2,6 +2,7 @@ package syntax.tryExpression
 
 class SomeException: Exception()
 
+@Suppress("UNUSED_VARIABLE")
 fun tryExpression() {
     try {
         // some code
