@@ -3,10 +3,10 @@ package i_introduction._8_Extension_Functions.StringExtensions
 import util.TODO
 
 
-fun String.lastChar() = this[this.length() - 1]
+fun String.lastChar() = this[this.length - 1]
 
 //'this' can be omitted
-fun String.lastChar1() = this[length() - 1]
+fun String.lastChar1() = this[length - 1]
 
 fun use() {
     // Try IntelliJ's Ctrl+Space "default completion" after the dot: lastChar() will be visible in

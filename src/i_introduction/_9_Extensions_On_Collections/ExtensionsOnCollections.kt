@@ -15,7 +15,7 @@ fun operationsWithCollections() {
     }
 
     val minors = users.filter { u -> u.age < 21 }
-    println("${minors.size()} user(s) under 21 years old")
+    println("${minors.size} user(s) under 21 years old")
 
     val youngestOver20 = users.filter { u -> u.age > 20 }.minBy { u -> u.age }
     println("Youngest over 20: $youngestOver20")
@@ -52,8 +52,8 @@ fun todoTask9(): Nothing = TODO(
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {
-    val groupsByLength = collection. groupBy { s -> s.length() }
-    val maximumSizeOfGroup = groupsByLength.values().map { group -> group.size() }.max()
-    return groupsByLength.values().firstOrNull { group -> group.size() == maximumSizeOfGroup }
+    val groupsByLength = collection. groupBy { s -> s.length }
+    val maximumSizeOfGroup = groupsByLength.values.map { group -> group.size }.max()
+    return groupsByLength.values.firstOrNull { group -> group.size == maximumSizeOfGroup }
 }
 
