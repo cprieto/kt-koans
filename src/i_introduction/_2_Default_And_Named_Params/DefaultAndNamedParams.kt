@@ -1,7 +1,6 @@
 package i_introduction._2_Default_And_Named_Params
 
 import util.TODO
-import i_introduction._1_Functions.task1
 
 @Suppress("UNUSED_PARAMETER")
 fun bar(i: Int, s: String = "", b: Boolean = true) {}

@@ -16,7 +16,11 @@ enum class TimeInterval {
 
 operator fun MyDate.rangeTo(end: MyDate) : DateRange = DateRange(this, end)
 
-class DateRange(public val start: MyDate, public val end: MyDate) : Iterable<MyDate> {
+class DateRange(public override val start: MyDate, public override val end: MyDate) : Iterable<MyDate>, Range<MyDate> {
+    override fun contains(item: MyDate): Boolean {
+        return start <= item && end >= item
+    }
+
     override fun iterator(): Iterator<MyDate> = object : Iterator<MyDate> {
         var current : MyDate = start
         override fun hasNext(): Boolean {
