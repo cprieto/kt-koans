@@ -1,8 +1,9 @@
 package i_introduction._5_Nullable_Types
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test as test
 
+@Suppress("PARAMETER_NAME_CHANGED_ON_OVERRIDE")
 class _05_Nullable_Types {
     fun testSendMessageToClient(
             client: Client?,
