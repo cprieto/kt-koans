@@ -1,7 +1,6 @@
 package syntax.qualifiedThis
 
 class Outer { // implicit label @Outer
-    @Suppress("UNUSED_VARIABLE")
     inner class Inner { // implicit label @Inner
         fun Int.foo() { // implicit label @foo
             use(this@Outer, this@Inner, this@foo)

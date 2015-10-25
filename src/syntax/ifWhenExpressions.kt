@@ -1,6 +1,5 @@
 package syntax.ifWhenExpressions
 
-@Suppress("UNUSED_VARIABLE")
 fun ifExpression(a: Int, b: Int) {
     val max1 = if (a > b) a else b
 
@@ -14,7 +13,6 @@ fun ifExpression(a: Int, b: Int) {
     }
 }
 
-@Suppress("UNUSED_VARIABLE")
 fun whenExpression(a: Any?) {
     val result = when (a) {
         null -> "null"
@@ -24,7 +22,6 @@ fun whenExpression(a: Any?) {
     }
 }
 
-@Suppress("UNUSED_EXPRESSION")
 fun whenExpression(x: Int) {
     when (x) {
         0, 11 -> "0 or 11"
@@ -34,7 +31,6 @@ fun whenExpression(x: Int) {
     }
 }
 
-@Suppress("UNUSED_EXPRESSION")
 fun whenWithoutArgument(x: Int) {
     when {
         x == 42 -> "x is 42"

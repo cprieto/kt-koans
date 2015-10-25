@@ -6,7 +6,6 @@ fun test() {
     use(1, 2.1, "a")
 }
 
-@Suppress("UNUSED_VARIABLE")
 fun useArray() {
     val asc = Array<Int>(5, { i -> i * i }) // Creates an array [0, 1, 4, 9, 16]
 
@@ -29,7 +28,6 @@ fun useArray() {
     }
 }
 
-@Suppress("UNUSED_VARIABLE")
 fun arraysOfPrimitives() {
     // For best performance on the JVM use specialized array classes
     val intArray: IntArray = intArrayOf(1, 2, 3)
