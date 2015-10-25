@@ -1,7 +1,5 @@
 package ii_conventions
 
-import util.TODO
-
 fun multiAssignPair(pair: Pair<Int, String>) {
     val (first, second) = pair
 }
@@ -54,4 +52,4 @@ fun multiAssignDate(date: MyDate) {
 
 fun todoTask16(): Nothing = TODO("Again no special task. Just return 'true' if you are interested in Kotlin. =)")
 
-fun task16(): Boolean = todoTask16()
+fun task16(): Boolean = true
