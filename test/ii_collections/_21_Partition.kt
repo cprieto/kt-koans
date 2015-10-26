@@ -1,6 +1,6 @@
 package ii_collections
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test
 import ii_collections.data.*
 

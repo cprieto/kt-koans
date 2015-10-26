@@ -1,6 +1,6 @@
 package vi_generics
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test
 
 public class _41_Generic_Functions {

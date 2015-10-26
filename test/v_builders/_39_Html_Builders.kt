@@ -1,6 +1,6 @@
 package v_builders
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test
 
 class _39_Html_Builders {

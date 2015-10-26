@@ -1,6 +1,6 @@
 package iii_conventions.multiAssignemnt
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test
 
 class _30_Multi_Assignment {

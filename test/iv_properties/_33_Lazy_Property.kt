@@ -1,6 +1,6 @@
 package iv_properties
 
-import junit.framework.Assert
+import org.junit.Assert
 import org.junit.Test
 
 class _33_Lazy_Property {

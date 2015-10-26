@@ -1,6 +1,6 @@
 package v_builders
 
-import junit.framework.Assert
+import org.junit.Assert
 import util.questions.Answer.b
 import util.questions.Answer.c
 import v_builders.builders.task40
