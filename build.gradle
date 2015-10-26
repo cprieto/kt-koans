@@ -38,3 +38,7 @@ test {
         events "skipped", "failed"
     }
 }
+
+compileKotlin {
+    kotlinOptions.suppressWarnings = true
+}
