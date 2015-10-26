@@ -32,3 +32,9 @@ sourceSets {
     test.kotlin.srcDirs += 'test'
     main.java.srcDirs += 'src/main/kotlin'
 }
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
